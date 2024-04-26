@@ -10,9 +10,9 @@ https://go.dev/doc/install
 
 `go mod init %githubUrl%`
 
-Example (this repo): `got mod init github.com/PoppedBit/goForthAndConcur`
+Example (this repo): `go mod init github.com/PoppedBit/goForthAndConcur`
 
-`got mod tidy`
+`go mod tidy`
 
 ## Run the App
 
