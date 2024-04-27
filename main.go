@@ -32,6 +32,8 @@ func main() {
 	}
 
 	// Struct
+	emptyCat := new(Cat)
+
 	myCat := Cat{
 		Pet: Pet{
 			name: "Bro",
