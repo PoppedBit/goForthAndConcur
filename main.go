@@ -15,7 +15,12 @@ type Pet struct {
 }
 
 type Cat struct {
+	Pet
 	hasClaws bool
+}
+
+func (cat Cat) meow() {
+	fmt.Println(cat.name + " says Meow")
 }
 
 func main() {
@@ -25,6 +30,17 @@ func main() {
 	if err != nil {
 		log.Fatalf("Error loading .env file")
 	}
+
+	// Struct
+	myCat := Cat{
+		Pet: Pet{
+			name: "Bro",
+			age:  10,
+		},
+		hasClaws: true,
+	}
+
+	myCat.meow()
 
 	// Arrays
 	myList := []int{1, 2, 3, 4, 5}
